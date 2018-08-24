@@ -1,9 +1,9 @@
 require 'game'
 
 describe Game do
-  let(:game) { described_class.new }
   let(:piplup) { double :player }
   let(:pikachu) { double :player }
+  let(:game) { described_class.new(piplup, pikachu) }
   # describe '#attack' do
   #   it 'allows a player to reduce the hp of another player' do
   #     expect { pikachu.attack(piplup) }.to change { piplup.hp }.by -10
