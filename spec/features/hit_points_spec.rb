@@ -22,3 +22,5 @@ feature 'view hit points' do
     expect(page).to have_content 'Pikachu: 60HP'
   end
 end
+
+
