@@ -18,5 +18,12 @@ describe Game do
     end
   end
 
+  describe '#switch_turns' do
+    it 'switches the turn' do
+      game.switch_turns
+      expect(game.turn).to eq pikachu
+    end
+  end
+
 
 end

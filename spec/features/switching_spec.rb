@@ -9,9 +9,9 @@ feature "player switching" do
   end
 
 
-  scenario "player 2 told it's their turn to after player 1 has attacked" do
+  scenario "player 2 told it's their turn after player 1 has attacked" do
 
-    sign_in_and_play 
+    sign_in_and_play
     click_button 'Attack'
     click_link 'OK'
     expect(page).to have_content "Piplup's turn"

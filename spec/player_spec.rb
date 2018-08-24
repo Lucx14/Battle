@@ -24,9 +24,5 @@ describe Player do
     end
   end
 
-  describe '#attack' do
-    it 'allows a player to reduce the hp of another player' do
-      expect { pikachu.attack(piplup) }.to change { piplup.hp }.by -10
-    end
-  end
+  
 end
